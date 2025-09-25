@@ -47,8 +47,11 @@ export default function Contact() {
         <div>
           <h2 className="font-serif text-3xl text-z-navy mb-2">Contact / Book a Fitting</h2>
           <p className="text-z-ink/80 mb-6">Questions or ready to start? We’d love to help.</p>
-          <a href="https://wa.me/19178734717?text=I%20want%20to%20get%20Zuited%20Up!%20Tell%20me%20more!" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-green-500 text-white px-5 py-3 text-sm hover:bg-green-600">Message on WhatsApp</a>
-        </div>
+        <a href="https://wa.me/15551234567?text=I%20want%20to%20get%20Zuited%20Up!%20Tell%20me%20more!" 
+   target="_blank" rel="noopener">
+  Chat with us on WhatsApp
+</a>
+         </div>
         <form onSubmit={handleSubmit(onSubmit)} className="bg-white border border-z-silver/30 rounded-2xl p-6 grid gap-4">
           <div>
             <label className="block text-sm text-z-ink/80 mb-1">Name</label>
