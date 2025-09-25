@@ -15,10 +15,10 @@ type StyleCard = {
 };
 
 const styles: StyleCard[] = [
-  { key: "single", name: "Single-Breasted Classic", image: "/brand/style-single.jpg", blurb: "The timeless Shabbos go-to." },
-  { key: "double", name: "Double-Breasted Bold", image: "/brand/style-double.jpg", blurb: "Strong presence for yom tov or black-tie simchas." },
-  { key: "tux", name: "Tuxedo", image: "/brand/style-tux.jpg", blurb: "Sleek, refined, wedding-ready." },
-  { key: "three", name: "Three-Piece Tradition", image: "/brand/style-threepiece.jpg", blurb: "Extra polish for bar mitzvahs and special occasions." },
+  { key: "single", name: "Single-Breasted Classic", image: "/brand/shabboszuit.jpg", blurb: "The timeless Shabbos go-to." },
+  { key: "double", name: "Double-Breasted Bold", image: "/brand/weddingzuit.jpg", blurb: "Strong presence for yom tov or black-tie simchas." },
+  { key: "tux", name: "Tuxedo", image: "/brand/blacktiezuit.jpg", blurb: "Sleek, refined, wedding-ready." },
+  { key: "three", name: "Three-Piece Tradition", image: "/brand/ytzuit.jpg", blurb: "Extra polish for bar mitzvahs and special occasions." },
 ];
 
 export default function Styles() {
