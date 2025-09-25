@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section id="hero" className="relative h-[70vh] min-h-[520px] w-full">
       <Image
-        src="/brand/hero.jpg"
+        src="/brand/zuituphero.png"
         alt="Tailored suit editorial backdrop, navy suit at golden hour"
         priority
         fetchPriority="high"
