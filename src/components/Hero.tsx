@@ -10,7 +10,7 @@ export default function Hero() {
         fetchPriority="high"
         sizes="100vw"
         fill
-        className="object-cover"
+        className="object-cover object-top"
       />
       <div className="absolute inset-0 bg-z-ink/30" />
       <div className="relative h-full container-standard flex items-center">
