@@ -4,12 +4,12 @@ import { } from "react";
 import Accordion from "@/components/ui/Accordion";
 
 const items = [
-  { key: "lapels", title: "Lapels", copy: "Choose notch, peak, or shawl lapels.", icon: "👔" },
-  { key: "vents", title: "Vents", copy: "Single or double vents for movement.", icon: "🧥" },
-  { key: "pockets", title: "Pockets", copy: "Flap, patch, or jetted pockets.", icon: "🧷" },
-  { key: "lining", title: "Lining", copy: "Breathable bemberg or statement patterns.", icon: "🧵" },
-  { key: "buttons", title: "Buttons", copy: "Horn, corozo, or covered buttons.", icon: "🪙" },
-  { key: "monogram", title: "Monogram", copy: "Personalize with subtle monogram.", icon: "✒️" },
+  { key: "lapels", title: "Lapels", copy: "Notch, Peak, or Shawl — the detail that defines your look.", icon: "👔" },
+  { key: "vents", title: "Vents", copy: "Single, Double, or None — for movement and tradition.", icon: "🧥" },
+  { key: "pockets", title: "Pockets", copy: "Flap, Welt, or Patch — subtle choices, major style points.", icon: "🧷" },
+  { key: "lining", title: "Lining", copy: "Classic navy, rich burgundy, or patterned flair.", icon: "🧵" },
+  { key: "buttons", title: "Buttons", copy: "Polished horn, modern matte, or gold statement.", icon: "🪙" },
+  { key: "monogram", title: "Monogram", copy: "Add your initials inside for a personal touch.", icon: "✒️" },
 ];
 
 export default function Details() {

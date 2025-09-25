@@ -30,6 +30,9 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+  other: {
+    "color-scheme": "light",
+  },
 };
 
 export default function RootLayout({

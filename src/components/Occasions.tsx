@@ -1,8 +1,8 @@
 const items = [
-  { key: "shabbos", title: "Shabbos", note: "Classic navy, soft drape" },
-  { key: "yomtov", title: "Yom Tov", note: "Elevated textures" },
-  { key: "barmitzvah", title: "Bar Mitzvah", note: "Confident and youthful" },
-  { key: "wedding", title: "Wedding", note: "Formal perfection" },
+  { key: "shabbos", title: "Shabbos", note: "Shabbos Classic Navy" },
+  { key: "yomtov", title: "Yom Tov", note: "Yom Tov Charcoal" },
+  { key: "barmitzvah", title: "Bar Mitzvah", note: "Bar Mitzvah Slim" },
+  { key: "wedding", title: "Wedding", note: "Black-Tie Wedding" },
 ];
 
 export default function Occasions() {

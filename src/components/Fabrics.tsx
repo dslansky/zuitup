@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import Section, { itemVariants } from "@/components/Section";
+import Image from "next/image";
 
 type Swatch = { id: number; color: string; season: string; price: string };
 
@@ -49,10 +50,13 @@ export default function Fabrics() {
             </select>
           </div>
         </div>
+        <p className="text-z-ink/80 mb-4">Choose from a wide range of all-season and premium wool fabrics. From deep navy to rich charcoal, every swatch is crafted for comfort, style, and durability.</p>
         <motion.div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4" variants={{ show: { transition: { staggerChildren: 0.08 } } }}>
           {filtered.map((s) => (
             <motion.div key={s.id} className="aspect-square rounded-2xl border border-z-silver/30 overflow-hidden bg-white shadow-sm" variants={itemVariants}>
-              <div className="h-2/3" style={{ background: `radial-gradient(circle at 30% 30%, rgba(255,255,255,.6), rgba(0,0,0,.05)), ${s.color.toLowerCase()}` }} />
+              <div className="relative h-2/3">
+                <Image src="/brand/swatch-navy.svg" alt={`${s.color} fabric swatch`} fill sizes="(max-width: 768px) 50vw, 25vw" className="object-cover" />
+              </div>
               <div className="p-2 text-xs text-z-ink/80 flex items-center justify-between">
                 <span>{s.color}</span>
                 <span>{s.season}</span>

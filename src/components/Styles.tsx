@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Section, { itemVariants } from "@/components/Section";
+import Image from "next/image";
 import Drawer from "@/components/ui/Drawer";
 import Button from "@/components/ui/Button";
 
@@ -14,10 +15,10 @@ type StyleCard = {
 };
 
 const styles: StyleCard[] = [
-  { key: "single", name: "Single-Breasted", image: "https://images.unsplash.com/photo-1520975922326-4deab0f7f3ae?q=80&w=1200&auto=format&fit=crop", blurb: "Classic and versatile for any occasion." },
-  { key: "double", name: "Double-Breasted", image: "https://images.unsplash.com/photo-1479065476818-424362c3a854?q=80&w=1200&auto=format&fit=crop", blurb: "Bold silhouette with timeless appeal." },
-  { key: "tux", name: "Tuxedo", image: "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200&auto=format&fit=crop", blurb: "Black-tie ready elegance." },
-  { key: "three", name: "Three-Piece", image: "https://images.unsplash.com/photo-1516727003284-a96541e51e1f?q=80&w=1200&auto=format&fit=crop", blurb: "Refined vest set for elevated formality." },
+  { key: "single", name: "Single-Breasted Classic", image: "/brand/style-single.jpg", blurb: "The timeless Shabbos go-to." },
+  { key: "double", name: "Double-Breasted Bold", image: "/brand/style-double.jpg", blurb: "Strong presence for yom tov or black-tie simchas." },
+  { key: "tux", name: "Tuxedo", image: "/brand/style-tux.jpg", blurb: "Sleek, refined, wedding-ready." },
+  { key: "three", name: "Three-Piece Tradition", image: "/brand/style-threepiece.jpg", blurb: "Extra polish for bar mitzvahs and special occasions." },
 ];
 
 export default function Styles() {
@@ -33,7 +34,7 @@ export default function Styles() {
           {styles.map((s) => (
             <motion.div key={s.key} className="group rounded-2xl overflow-hidden border border-z-silver/30 bg-z-cream shadow-sm" variants={itemVariants}>
               <div className="relative h-56">
-                <div className="absolute inset-0 bg-center bg-cover transition-transform duration-300 group-hover:scale-105" style={{ backgroundImage: `url(${s.image})` }} />
+                <Image src={s.image} alt={`${s.name} style`} fill sizes="(max-width: 768px) 100vw, 25vw" className="object-cover transition-transform duration-300 group-hover:scale-105" />
               </div>
               <div className="p-4">
                 <h3 className="font-serif text-xl text-z-navy">{s.name}</h3>

@@ -1,8 +1,8 @@
 export default function TrustRow() {
   const items = [
-    { label: "Made-to-Measure" },
-    { label: "Premium Wool" },
-    { label: "Alteration Credit" },
+    { label: "Perfect Fit Guarantee" },
+    { label: "Premium Italian & English Mills" },
+    { label: "Alteration Credit Included" },
     { label: "Simcha-Ready Delivery" },
   ];
   return (

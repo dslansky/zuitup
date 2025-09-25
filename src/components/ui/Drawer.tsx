@@ -19,12 +19,12 @@ export default function Drawer({ open, onClose, title, children }: Props) {
   }, [open, onClose]);
 
   return (
-    <div className={`fixed inset-0 z-50 ${open ? "pointer-events-auto" : "pointer-events-none"}`} aria-hidden={!open}>
+    <div className={`fixed inset-0 z-50 ${open ? "pointer-events-auto" : "pointer-events-none"}`} role="dialog" aria-modal="true" aria-label={typeof title === "string" ? title : "Details drawer"}>
       <div className={`absolute inset-0 bg-black/30 transition-opacity ${open ? "opacity-100" : "opacity-0"}`} onClick={onClose} />
       <div className={`absolute right-0 top-0 h-full w-full sm:w-[480px] bg-z-cream border-l border-z-silver/30 rounded-l-2xl shadow-xl transition-transform ${open ? "translate-x-0" : "translate-x-full"}`}>
         <div className="p-4 border-b border-z-silver/30 flex items-center justify-between">
           <h3 className="font-serif text-lg text-z-navy">{title}</h3>
-          <button onClick={onClose} className="text-z-ink/60 hover:text-z-navy">Close</button>
+          <button onClick={onClose} className="text-z-ink/60 hover:text-z-navy focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-z-navy focus-visible:ring-offset-z-cream">Close</button>
         </div>
         <div className="p-4 overflow-y-auto h-[calc(100%-56px)]">{children}</div>
       </div>
