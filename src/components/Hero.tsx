@@ -13,10 +13,11 @@ export default function Hero() {
         className="object-cover object-top"
       />
       <div className="absolute inset-0 bg-z-ink/30" />
-      <div className="relative h-full container-standard flex items-center">
+      <div className="relative h-full container-standard flex items-end pb-16 md:pb-24">
         <div className="max-w-2xl text-z-cream">
           <h1 className="font-serif text-5xl sm:text-6xl tracking-tight">Zuit Up</h1>
           <p className="mt-3 text-lg sm:text-xl text-z-cream/95">Your Fit. Your Future. Your Zuit.</p>
+          <p className="mt-1 text-base text-z-cream/90">by Yaakov Zand</p>
           <p className="mt-2 text-base sm:text-lg text-z-cream/90 max-w-2xl">Custom suiting designed for Shabbos, Yom Tov, and every simcha. Look sharp, feel confident, and celebrate in style.</p>
           <div className="mt-8 flex items-center gap-3">
             <a href="#styles" className="inline-flex items-center rounded-full bg-z-gold text-z-ink px-6 py-3 text-sm sm:text-base hover:bg-z-cream transition-colors">Start Your Zuit</a>

@@ -11,6 +11,7 @@ import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import MobileCTA from "@/components/MobileCTA";
+import About from "@/components/About";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <Details />
         <Occasions />
         <HowItWorks />
+        <About />
         <Testimonials />
         <FAQ />
         <Contact />
