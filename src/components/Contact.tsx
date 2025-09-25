@@ -47,7 +47,7 @@ export default function Contact() {
         <div>
           <h2 className="font-serif text-3xl text-z-navy mb-2">Contact / Book a Fitting</h2>
           <p className="text-z-ink/80 mb-6">Questions or ready to start? We’d love to help.</p>
-        <a href="https://wa.me/15551234567?text=I%20want%20to%20get%20Zuited%20Up!%20Tell%20me%20more!" 
+        <a href="https://wa.me/19178734717?text=I%20want%20to%20get%20Zuited%20Up!%20Tell%20me%20more!" 
    target="_blank" rel="noopener">
   Chat with us on WhatsApp
 </a>
