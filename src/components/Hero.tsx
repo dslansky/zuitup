@@ -1,10 +1,6 @@
-"use client";
-
 import Image from "next/image";
-import { useState } from "react";
 
 export default function Hero() {
-  const [logoOk, setLogoOk] = useState(true);
   return (
     <section id="hero" className="relative h-[70vh] min-h-[520px] w-full">
       <Image
@@ -19,10 +15,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-z-ink/30" />
       <div className="relative h-full container-standard flex items-center">
         <div className="max-w-2xl text-z-cream">
-          {logoOk && (
-            <Image src="/zuit.png" alt="Zuit Up" width={220} height={64} priority onError={() => setLogoOk(false)} className="mb-2 h-auto w-auto" />
-          )}
-          <h1 className={`${logoOk ? "sr-only" : "font-serif text-5xl sm:text-6xl tracking-tight"}`}>Zuit Up</h1>
+          <h1 className="font-serif text-5xl sm:text-6xl tracking-tight">Zuit Up</h1>
           <p className="mt-3 text-lg sm:text-xl text-z-cream/95">Your Fit. Your Future. Your Zuit.</p>
           <p className="mt-2 text-base sm:text-lg text-z-cream/90 max-w-2xl">Custom suiting designed for Shabbos, Yom Tov, and every simcha. Look sharp, feel confident, and celebrate in style.</p>
           <div className="mt-8 flex items-center gap-3">
