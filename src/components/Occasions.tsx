@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const items = [
   { key: "shabbos", title: "Shabbos", note: "Shabbos Classic Navy", img: "/brand/shabboszuit.jpg", alt: "Shabbos — suits in classic navy" },
-  { key: "yomtov", title: "Yom Tov", note: "Yom Tov Charcoal", img: "/brand/ytzuit.jpg", alt: "Yom Tov — elevated charcoal tones" },
+  { key: "yomtov", title: "Yom Tov", note: "Yom Tov Charcoal", img: "/brand/ytzuit.jpg?v=1", alt: "Yom Tov — elevated charcoal tones" },
   { key: "barmitzvah", title: "Bar Mitzvah", note: "Bar Mitzvah Slim", img: "/brand/shabboszuit.jpg", alt: "Bar Mitzvah — slim and sharp" },
   { key: "wedding", title: "Wedding", note: "Black-Tie Wedding", img: "/brand/blacktiezuit.jpg", alt: "Wedding — black tie perfection" },
 ];
